@@ -1,5 +1,5 @@
 (function () {
-var hr = (function () {
+  var hr = (function () {
     'use strict';
 
     var global = tinymce.util.Tools.resolve('tinymce.PluginManager');
@@ -15,13 +15,13 @@ var hr = (function () {
       editor.addButton('hr', {
         icon: 'hr',
         tooltip: 'Horizontal line',
-        cmd: 'InsertHorizontalRule'
+        cmd: 'InsertHorizontalRule',
       });
       editor.addMenuItem('hr', {
         icon: 'hr',
         text: 'Horizontal line',
         cmd: 'InsertHorizontalRule',
-        context: 'insert'
+        context: 'insert',
       });
     };
     var Buttons = { register: register$1 };
@@ -30,10 +30,8 @@ var hr = (function () {
       Commands.register(editor);
       Buttons.register(editor);
     });
-    function Plugin () {
-    }
+    function Plugin() {}
 
     return Plugin;
-
-}());
+  })();
 })();
